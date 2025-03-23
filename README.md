@@ -1,59 +1,60 @@
 # FastAPI on Vercel
 
-このプロジェクトは、VercelでFastAPIアプリケーションをデプロイする方法を示しています。
+This project demonstrates how to deploy a FastAPI application on Vercel.
 
-## 特徴
+English | [日本語](README.ja.md)
 
-- FastAPIフレームワークを使用した高速なAPIの構築
-- Vercelでの簡単なデプロイ
-- 自動的なOpenAPI（Swagger）ドキュメントの生成
+## Features
 
-## 前提条件
+- Build high-performance APIs with FastAPI framework
+- Easy deployment on Vercel
+- Automatic OpenAPI (Swagger) documentation generation
 
-- Python 3.9以上
-- Vercelアカウント
-- Vercel CLI（ローカルテスト用）
+## Prerequisites
 
-## セットアップ方法
+- Python 3.9 or higher
+- Vercel account
+- Vercel CLI (for local testing)
 
-1. リポジトリをクローンする
+## Setup Instructions
+
+1. Clone the repository
 
     ```bash
     git clone https://github.com/yourusername/fastapi-on-vercel.git
     cd fastapi-on-vercel
     ```
 
-## Vercelへのデプロイ
+## Deploying to Vercel
 
-1. Vercel CLIをインストールする（オプション）
+1. Install Vercel CLI (optional)
 
     ```bash
     npm i -g vercel
     ```
 
-2. Vercelにデプロイする
+2. Deploy to Vercel
 
-    Vercel CLIを使用する場合:
-
+    Using Vercel CLI:
     ```bash
     vercel login
     vercel
     ```
 
-    GitHubリポジトリと連携する場合:
-    1. GitHubにリポジトリをプッシュ
-    2. Vercelダッシュボードでリポジトリをインポート
-    3. デプロイ設定を確認して「Deploy」をクリック
+    Via GitHub repository:
+    1. Push your repository to GitHub
+    2. Import the repository in the Vercel dashboard
+    3. Verify the deployment settings and click "Deploy"
 
-## ファイル構成
+## File Structure
 
-- **app.py**: FastAPIアプリケーションのエントリーポイント
-- **requirements.txt**: プロジェクトの依存関係（fastapi, uvicorn）
-- **vercel.json**: Vercelの設定ファイル（ビルド設定とルート設定）
-- **.vercelignore**: デプロイから除外するファイル
+- **app.py**: Entry point for the FastAPI application
+- **requirements.txt**: Project dependencies (fastapi, uvicorn)
+- **vercel.json**: Vercel configuration file (build settings and routes)
+- **.vercelignore**: Files to exclude from deployment
 
-## 参考資料
+## Reference
 
-- [FastAPI公式ドキュメント](https://fastapi.tiangolo.com/)
-- [Vercelのプロジェクト設定](https://vercel.com/docs/project-configuration)
-- [VercelのPythonランタイム](https://vercel.com/docs/functions/serverless-functions/runtimes/python)
+- [FastAPI Official Documentation](https://fastapi.tiangolo.com/)
+- [Vercel Project Configuration](https://vercel.com/docs/project-configuration)
+- [Vercel Python Runtime](https://vercel.com/docs/functions/serverless-functions/runtimes/python)
